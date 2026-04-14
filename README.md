@@ -46,9 +46,14 @@ AI-Resume-Matcher/
 
 ## 📊 How It Works
 
-The system operates through a multi-stage pipeline to ensure both mathematical accuracy and semantic understanding:
+> ### 1. Text Extraction
+> The tool parses the uploaded PDF using `PyPDF2` to transform unstructured document data into clean text for analysis.
 
-1. **📄 Text Extraction:** The application utilizes `PyPDF2` to parse and extract raw text from uploaded PDF resumes, handling multi-page documents seamlessly.
-2. **🔢 Vectorization:** It creates a mathematical representation (embeddings) of both the Resume and the Job Description using **TF-IDF (Term Frequency-Inverse Document Frequency)**.
-3. **📐 Similarity Analysis:** A quantitative base score is calculated using **Cosine Similarity**, measuring the geometric distance between the resume and JD vectors.
-4. **🧠 LLM Refinement:** The extracted text is then processed by the **Llama 3.3 (70B)** model. This stage provides a deep semantic critique, identifying "soft" matches and human-like context that traditional algorithms miss.
+> ### 2. Vectorization
+> It creates a mathematical representation of both the Resume and the JD using `TF-IDF` vectorization, focusing on keyword density and importance.
+
+> ### 3. Similarity Analysis
+> A mathematical base score is calculated using `Cosine Similarity` to determine the initial alignment between the candidate and the role.
+
+> ### 4. LLM Refinement
+> The text is sent to the **Llama 3.3** model via Groq to provide a qualitative, human-like critique of the candidate's fit and actionable optimization tips.
