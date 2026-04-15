@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
 </p>
 
-### 🚀 [Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/ak1409/ai-resume)
+### 🚀 [Live Demo on Hugging Face Spaces](https://ak1409-ai-resume.hf.space)
 
 An intelligent **Applicant Tracking System (ATS)** analyzer that bridges the gap between job seekers and recruiters. Leveraging the lightning-fast **Llama 3.3 (70B)** model via Groq, this tool provides deep semantic analysis, keyword gap identification, and actionable feedback to optimize your resume for specific job descriptions.
 
